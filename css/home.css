@@ -1314,6 +1314,7 @@ ul.res {
 .icons i {
   padding: 0 12px;
   cursor: pointer;
+  transition: all .3s ease-in-out;
 }
 
 .copyright i:hover,
