@@ -1,7 +1,11 @@
 $( document ).ready(function() {
   new WOW().init();
 
-  $(".loader-wrap").css({"display": "none"});
+  $(window).load(function () {
+        $(".loader").fadeOut(400,function () {
+            $(this).remove();
+        });
+    });
 
   $('.sec-three .owl-carousel').owlCarousel({
     loop:false,
