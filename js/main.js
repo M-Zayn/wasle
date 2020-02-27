@@ -1,12 +1,7 @@
 $( document ).ready(function() {
   new WOW().init();
 
-  $(window).load(function () {
-    $(".loader-wrap").fadeOut(400,function () {
-        $(this).remove();
-      $(".loader-wrap").css({"display": "none"});
-    });
-});
+  $(".loader-wrap").css({"display": "none"});
 
   $('.sec-three .owl-carousel').owlCarousel({
     loop:false,
