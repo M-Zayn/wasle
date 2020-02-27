@@ -2,7 +2,7 @@ $( document ).ready(function() {
   new WOW().init();
 
   $(window).load(function () {
-        $(".loader").fadeOut(400,function () {
+        $(".loader-wrap").fadeOut(400,function () {
             $(this).remove();
         });
     });
