@@ -4,6 +4,7 @@ $( document ).ready(function() {
   $(window).load(function () {
     $(".loader-wrap").fadeOut(400,function () {
         $(this).remove();
+      $(".loader-wrap").css({"display": "none"});
     });
 });
 
