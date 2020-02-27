@@ -1,5 +1,7 @@
 $( document ).ready(function() {
-  // new WOW().init();
+  new WOW().init();
+
+  $(".loader-wrap").css({"display": "none"});
 
   $('.sec-three .owl-carousel').owlCarousel({
     loop:false,
