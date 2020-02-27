@@ -1620,8 +1620,7 @@ ul.res {
   right: -290px;
   font-family: frtBold;
   font-size: 20px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#40e497), color-stop(26%, #40e497), to(#3bb6b6));
-  background-image: linear-gradient(90deg, #40e497 0%, #40e497 26%, #3bb6b6 100%);
+  background: #555;
   padding: 20px 0 0 0;
 }
 
@@ -1656,6 +1655,7 @@ ul.res {
 .sm-nav .overlay .menu i {
   cursor: pointer;
   font-size: 25px;
+  color: #333;
   float: left;
   padding: 6px 26px;
 }
