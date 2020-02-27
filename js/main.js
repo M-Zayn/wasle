@@ -1,13 +1,20 @@
 $( document ).ready(function() {
   new WOW().init();
 
-  $(".loader-wrap").css({"display": "none"});
+  $(window).load(function () {
+    $(".loader-wrap").fadeOut(400,function () {
+        $(this).remove();
+        $(".loader-wrap").css({"display": "none"});
+    });
+    
+});
 
   $('.sec-three .owl-carousel').owlCarousel({
     loop:false,
     margin:0,
     nav:true,
     rtl:true,
+    dots:false,
     responsive:{
         0:{
             // autoWidth:true,
@@ -29,9 +36,11 @@ $( document ).ready(function() {
     nav:true,
     rtl:true,
     stagePadding: 15,
+    dots:false,
     responsive:{
         0:{
-            items:2
+            items:2,
+            dots:true
         },
         600:{
             items:4
@@ -45,10 +54,12 @@ $('.sponser .owl-carousel').owlCarousel({
   loop:false,
   margin:10,
   nav:false,
+  dots:false,
   rtl:true,
   responsive:{
       0:{
-          items:2
+          items:2,
+          dots:true
       },
       600:{
           items:3
@@ -60,14 +71,14 @@ $('.sponser .owl-carousel').owlCarousel({
 })
 $("#menu").on("click", function () {
 
-  $(".sm-nav").css({"display": "block"});
+  $(".sm-nav").show();
   $(".sm-nav .menu").animate({"right": "0"});
   $("html").css({"overflow":"hidden"});
 
 });
 $(".sm-nav .overlay").on("click", function () {
 
-  $(".sm-nav").css({"display": "none"});
+  $(".sm-nav").fadeOut(300);
   $(".sm-nav .menu").animate({"right": "-290px"});
   $("html").css({"overflow":"auto"});
 
