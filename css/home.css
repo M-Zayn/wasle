@@ -140,7 +140,7 @@ ul.res {
 }
 
 .loader:after {
-  content: 'Loading...';
+  content: 'Loading ...';
   font-size: 16px;
   font-family: "Arial";
   color: #ffffff;
@@ -862,6 +862,34 @@ ul.res {
   padding: 0 6px;
 }
 
+.sec-three .overlay .owl-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 0 0 0;
+  position: absolute;
+  top: 60%;
+  left: 100px;
+}
+
+.sec-three .overlay .owl-dots .owl-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #C8E0D8;
+  margin: 0 4px;
+  border-radius: 50%;
+}
+
+.sec-three .overlay .owl-dots .active {
+  width: 11px;
+  height: 11px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(64, 228, 151, 0.8)), to(rgba(59, 182, 182, 0.8)));
+  background-image: linear-gradient(90deg, rgba(64, 228, 151, 0.8) 0%, rgba(59, 182, 182, 0.8) 100%);
+}
+
 .sec-four {
   position: relative;
   overflow: hidden;
@@ -1081,6 +1109,31 @@ ul.res {
   width: -moz-max-content;
   width: max-content;
   height: 100px;
+}
+
+.sponser .owl-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 0 0 0;
+}
+
+.sponser .owl-dots .owl-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #C8E0D8;
+  margin: 0 4px;
+  border-radius: 50%;
+}
+
+.sponser .owl-dots .active {
+  width: 11px;
+  height: 11px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(64, 228, 151, 0.8)), to(rgba(59, 182, 182, 0.8)));
+  background-image: linear-gradient(90deg, rgba(64, 228, 151, 0.8) 0%, rgba(59, 182, 182, 0.8) 100%);
 }
 
 .sponser .sp-logo {
@@ -1314,6 +1367,7 @@ ul.res {
 .icons i {
   padding: 0 12px;
   cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
@@ -1549,6 +1603,7 @@ ul.res {
   width: 100%;
   height: 100%;
   z-index: 9999;
+  position: fixed;
 }
 
 .sm-nav .overlay {
@@ -1644,6 +1699,9 @@ ul.res {
   .sec-three .overlay .sec-two-header {
     padding: 60px 0 0 0;
   }
+  .sec-four .prices .prices-pdg .price {
+    margin: 12px 0;
+  }
   .sec-four {
     margin: 30px 0 20px 0;
   }
@@ -1659,6 +1717,12 @@ ul.res {
 }
 
 @media (max-width: 480px) {
+  .sec-one .full-col .hd-mr {
+    margin-top: 25px;
+  }
+  .sec-two .sec-two-servs .half-col {
+    margin: 8px 0;
+  }
   .sec-three {
     height: 850px;
   }
@@ -1685,6 +1749,9 @@ ul.res {
   .footer .overlay form .form-input input {
     width: auto;
   }
+  .sponser {
+    margin: 50px 0 30px 0;
+  }
 }
 
 @media (max-width: 420px) {
@@ -1695,7 +1762,8 @@ ul.res {
     height: 800px;
   }
   .sec-one {
-    min-height: 600px;
+    min-height: auto;
+    margin: 0;
   }
   .fst-back-img {
     display: none;
@@ -1709,6 +1777,12 @@ ul.res {
 }
 
 @media (max-width: 375px) {
+  .sec-one .full-col .hd-mr {
+    text-align: center;
+  }
+  .main-btns {
+    text-align: center;
+  }
   .fst-back-img {
     right: -390px;
   }
@@ -1716,7 +1790,7 @@ ul.res {
     margin-bottom: 40px;
   }
   .main-btns .fst-button {
-    margin: 12px 0;
+    margin: 16px 0;
   }
   .sec-two .fst-back-img {
     right: -600px;
@@ -1733,6 +1807,12 @@ ul.res {
   .footer .overlay form .form-input input {
     width: auto;
     padding: 10px 43px 13px 90px;
+  }
+  .footer .overlay form .form-input button {
+    padding: 9px 33px;
+  }
+  .footer .overlay form .form-input input {
+    padding: 9px 35px 13px 80px;
   }
 }
 
