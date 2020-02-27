@@ -2,10 +2,10 @@ $( document ).ready(function() {
   new WOW().init();
 
   $(window).load(function () {
-        $(".loader-wrap").fadeOut(400,function () {
-            $(this).remove();
-        });
+    $(".loader-wrap").fadeOut(400,function () {
+        $(this).remove();
     });
+});
 
   $('.sec-three .owl-carousel').owlCarousel({
     loop:false,
