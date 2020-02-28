@@ -12,14 +12,16 @@ $( document ).ready(function() {
   $('.sec-three .owl-carousel').owlCarousel({
     loop:false,
     margin:0,
-    nav:true,
+    nav:false,
     rtl:true,
     dots:false,
     responsive:{
         0:{
             // autoWidth:true,
             items:1,
-            dots:true
+            dots:true,
+            nav: false,
+            loop: true
         },
         600:{
             items:3
