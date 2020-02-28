@@ -12,7 +12,7 @@ $( document ).ready(function() {
 
 $(window).on("scroll", function(){
 
-  $('a[data-scroll]').click(function (e) {
+  $('a[data-scroll]').on("click",function (e) {
     e.preventDefault();
     //Set Offset Distance from top to account for fixed nav
     var offset = 80;
@@ -57,7 +57,7 @@ $(window).on("scroll", function(){
     nav:true,
     rtl:true,
     stagePadding: 15,
-    dots:false,
+    dots:true,
     responsive:{
         0:{
             items:2,
