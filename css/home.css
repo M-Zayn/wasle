@@ -1767,9 +1767,6 @@ ul.res {
   .nav-bar .pos .nav-list {
     padding: 10px 0 0 0;
   }
-  .sec-three {
-    height: 800px;
-  }
   .sec-one {
     min-height: auto;
     margin: 0;
@@ -1782,6 +1779,9 @@ ul.res {
   }
   .sec-two .sec-two-header {
     display: none;
+  }
+  .sec-three {
+    height: 850px;
   }
 }
 
@@ -1811,7 +1811,7 @@ ul.res {
     max-width: 100%;
   }
   .sec-three {
-    height: 750px;
+    height: 850px;
   }
   .footer .overlay form .form-input input {
     width: auto;
@@ -1836,3 +1836,4 @@ ul.res {
 }
 
 /*# sourceMappingURL=home.css.map */
+
